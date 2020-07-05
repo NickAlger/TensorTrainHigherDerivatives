@@ -21,6 +21,8 @@ For generating plots:
 Tensor Train Construction from Tensor Actions, with Application to Compression of Large High Order Derivative Tensors.
 Nick Alger, Peng Chen, Omar Ghattas
 
+https://arxiv.org/abs/2002.06244
+
 
 ## Primary functionality:
 1) Function for constructing tensor train from tensor actions (Section 2 in the paper):
