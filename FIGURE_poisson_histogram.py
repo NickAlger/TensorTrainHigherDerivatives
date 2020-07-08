@@ -3,26 +3,29 @@ from fenics import *
 from poisson_problem import nonlinear_neumann_poisson_problem
 from taylor_series import construct_derivative_tensor_approximations, eval_tensor_train_taylor_series
 import pickle
+from time import time
 
 
 set_log_level(40)
 
 mesh_n = 40
 rank = 30
-num_derivatives = 6
+num_derivatives = 5
 num_samples = 1000
 generate_data = True
-save_data = True
+save_data = False
 make_plot = True
-save_plot = True
+save_plot = False
 
 filename = 'poisson_histogram_6th.p'
 
 if generate_data:
     Q, a, m, u, bcs, apply_sqrtC, apply_sqrtC_T, QHD, apply_preconditioned_QHD, forward_map = nonlinear_neumann_poisson_problem(mesh_n)
 
+    t = time()
     f0, Jac_U, Jac_ss, Jac_Vt, all_CC = construct_derivative_tensor_approximations(QHD, apply_preconditioned_QHD, num_derivatives, rank)
-
+    dt_taylor = time() - t
+    print('dt_taylor=', dt_taylor)
 
     m0_vec = m.vector()[:].copy()
 
