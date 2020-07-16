@@ -1,6 +1,6 @@
 import numpy as np
 
-run_test = True
+run_test = False
 
 def make_hilbert_tensor(shape):
     # T_ijkl = 1/(i+j+k+l)
