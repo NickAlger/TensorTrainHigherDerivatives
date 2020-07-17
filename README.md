@@ -16,6 +16,11 @@ For generating plots:
 
 5) matplotlib
 
+For compressing the Hilbert tensor with TT-cross for comparison:
+
+6) Matlab
+7) TT-Toolbox
+
 
 ## Paper:
 Tensor Train Construction from Tensor Actions, with Application to Compression of Large High Order Derivative Tensors.
