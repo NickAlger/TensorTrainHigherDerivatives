@@ -32,12 +32,10 @@ https://arxiv.org/abs/2002.06244
 
 ## Primary functionality:
 1) Function for constructing tensor train from tensor actions (Section 2 in the paper):
-    - tensor_train_from_tensor_action() 
-    - tensor_train_from_tensor_action.py
+    - tensor_train_from_tensor_action() in tensor_train_from_tensor_action.py
 
 2) Class for computing higher derivative actions (Section 3 in the paper):
-    - class HigherDerivativesAction
-    - higher_derivatives_action.py
+    - class HigherDerivativesAction in higher_derivatives_action.py
 
 
 ## Examples:
