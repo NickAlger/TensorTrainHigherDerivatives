@@ -4,22 +4,23 @@
 2) Compute the action of higher derivative tensors for quantities of interest that depend on the solution of PDEs.
 
 ## Dependencies:
-1) numpy
-2) scipy
-3) collections_extended
+1) Python3
+2) numpy
+3) scipy
+4) collections_extended
 
 For higher derivative PDE stuff:
 
-4) fenics
+5) fenics
 
 For generating plots:
 
-5) matplotlib
+6) matplotlib
 
 For compressing the Hilbert tensor with TT-cross for comparison:
 
-6) Matlab
-7) TT-Toolbox
+7) Matlab
+8) TT-Toolbox
 
 
 ## Paper:
